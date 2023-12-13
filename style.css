@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -10,3 +10,88 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  --primary-green: hsl(160deg, 100%, 30%);
+  --secondary-gold-dark: hsl(45deg, 100%, 40%);
+  --secondary-gold-light: hsl(45deg, 100%, 50%);
+  --black: hsl(0deg, 0%, 0%);
+  --gray-darkest: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-md: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%) (white);
+  --max-width-container-lg: 800px;
+  --border-width: 0.5rem;
+  --mobile-padding: 1.5rem;
+}
+
+h1 {
+  font-weight: 800;
+  line-height: 38.4px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 800;
+  line-height: 38.4px;
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+header .max-width-wrapper {
+  max-width: calc(var(--max-width-container-lg));
+  margin: 0 auto;
+}
+
+header .intro-chunk {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  padding-inline: var(--mobile-padding);
+}
+
+.intro-chunk strong {
+  font-weight: 800;
+  color: var(--primary-green);
+}
+
+.intro-chunk p {
+  max-width: 415px;
+}
+
+main {
+  border-top: var(--border-width) solid var(--gray-light);
+  background-color: var(--gray-dark);
+}
+
+main .max-width-wrapper {
+  max-width: var(--max-width-container-lg);
+  margin: 0 auto;
+  padding-top: calc(4.5rem - var(--border-width));
+  padding-bottom: 3.5rem;
+  padding-inline: var(--mobile-padding);
+}
+
+main .max-width-wrapper .card {
+  margin-inline: calc(var(--mobile-padding) * -1);
+  background-color: white;
+  border-bottom: var(--border-width) solid var(--gray-light);
+  padding: 0.5rem var(--mobile-padding);
+}
+
+h2.indented-heading {
+  margin: 0;
+  margin-left: -2rem;
+  margin-bottom: calc(1.5rem - var(--border-width));
+  background-color: var(--secondary-gold-light);
+  border-bottom: var(--border-width) solid var(--secondary-gold-dark);
+  padding: 1rem 2rem 0.9375rem;
+  width: fit-content;
+}
