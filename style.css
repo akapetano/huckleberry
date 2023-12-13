@@ -28,21 +28,21 @@ body {
 
 h1 {
   font-weight: 800;
-  line-height: 38.4px;
+  line-height: 1.2;
   font-size: 2rem;
   margin-bottom: 3rem;
 }
 
 h2 {
   font-weight: 800;
-  line-height: 38.4px;
+  line-height: 1.2;
   font-size: 1.5rem;
 }
 
 p {
-  font-weight: 400;
   font-size: 1.25rem;
-  line-height: 30px;
+  line-height: 1.5;
+  font-weight: 400;
   margin-bottom: 1rem;
   margin-top: 0;
 }
@@ -80,14 +80,14 @@ main .max-width-wrapper {
   padding-inline: var(--mobile-padding);
 }
 
-main .max-width-wrapper .card {
+.card {
   margin-inline: calc(var(--mobile-padding) * -1);
   background-color: white;
   border-bottom: var(--border-width) solid var(--gray-light);
   padding: 0.5rem var(--mobile-padding);
 }
 
-h2.indented-heading {
+.indented-heading {
   margin: 0;
   margin-left: -2rem;
   margin-bottom: calc(1.5rem - var(--border-width));
